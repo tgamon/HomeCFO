@@ -11,6 +11,7 @@ namespace Model.Global
     public class Account
     {
         public int AccountId { get; set; }
+        public int AccountSortOrder { get; set; }
         public string AccountName { get; set; }
         public string SourceLookup { get; set; }
 

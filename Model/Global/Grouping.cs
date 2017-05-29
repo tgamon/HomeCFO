@@ -11,6 +11,7 @@ namespace Model.Global
     public class Grouping
     {
         public int GroupingId { get; set; }
+        public int GroupSortOrder { get; set; }
         public string GroupingName { get; set; }
 
         public int StatementClassificationId { get; set; }

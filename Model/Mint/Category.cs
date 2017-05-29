@@ -11,7 +11,6 @@ namespace Model.Mint
     public class Category
     {
         public int CategoryId { get; set; }
-        public int SortOrder { get; set; }
         public string CategoryName { get; set; }
 
         public int GroupId { get; set; }

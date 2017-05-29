@@ -11,7 +11,7 @@ namespace Model.Global
     public class StatementClassification
     {
         public int StatementClassificationId { get; set; }
-        public int SortOrder { get; set; }
+        public int StatemnentSortOrder { get; set; }
         public bool BalanceSheet { get; set; }
         public string Name { get; set; }
 
