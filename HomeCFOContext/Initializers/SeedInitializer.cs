@@ -15,6 +15,9 @@ namespace HomeCFOContext.Initializers
     {
         protected override void Seed(Context context)
         {
+            //add global data
+
+
             //add mint data
             MintSeed mint = new MintSeed(ref context);
 
@@ -22,16 +25,7 @@ namespace HomeCFOContext.Initializers
             mint.AddMintCategories(@"C:\Users\ilike\OneDrive\Finance_Tom\App\SeedData\Mint_Categories.csv");
             mint.AddMintActivity(@"C:\Users\ilike\OneDrive\Finance_Tom\App\SeedData\Mint_Activities.csv");
 
-
-
-
             base.Seed(context);
-        }
-
-        //add Global seed data
-        private IList<StatementClassification> AddGlobalStatementClassification(string pathtofile)
-        {
-
         }
 
     }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
+using HomeCFOContext.Initializers;
 using Model.Mint;
 using Model.Global;
 
@@ -13,7 +14,11 @@ namespace HomeCFOContext
     {
         public Context() : base("name=HomeCFO")
         {
-            Database.SetInitializer<Context>(new DropCreateDatabaseAlways<Context>());
+            //development initializer without seed data
+            //Database.SetInitializer<Context>(new DropCreateDatabaseAlways<Context>());
+
+            //development initializer with seed data
+            Database.SetInitializer(new SeedInitializer());
         }
         //Global Entities
         public DbSet<Account> Accounts { get; set; }
