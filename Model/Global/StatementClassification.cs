@@ -15,6 +15,6 @@ namespace Model.Global
         public bool BalanceSheet { get; set; }
         public string Name { get; set; }
 
-        public virtual List<Grouping> Groupings { get; set; }
+        public virtual IList<Grouping> Groupings { get; set; }
     }
 }

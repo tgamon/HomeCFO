@@ -8,6 +8,7 @@ using FileHelpers;
 namespace Model.Mint
 {
     [DelimitedRecord(",")]
+    [IgnoreFirst]
     public class Activity
     {
         public int ActivityId { get; set; }
@@ -21,7 +22,7 @@ namespace Model.Mint
         public string Notes { get; set; }
 
         public int CategoryId { get; set; }
-        public virtual Category Category { get; set; }
+        //public virtual Category Category { get; set; }
 
     }
 }

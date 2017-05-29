@@ -23,8 +23,9 @@ namespace HomeCFOContext.SeedData
             IList<Group> mintGroups = new List<Group>();
 
             var engine = new FileHelperEngine<Group>();
+            var results = engine.ReadFile(pathtofile);
 
-            mintGroups = engine.ReadFile(pathtofile);
+            mintGroups = results.ToList<Group>();
 
             foreach (Group item in mintGroups)
                 mintContext.Groups.Add(item);
@@ -35,8 +36,9 @@ namespace HomeCFOContext.SeedData
             IList<Category> mintCategory = new List<Category>();
 
             var engine = new FileHelperEngine<Category>();
+            var results = engine.ReadFile(pathtofile);
 
-            mintCategory = engine.ReadFile(pathtofile);
+            mintCategory = results.ToList<Category>();
 
             foreach (Category item in mintCategory)
                 mintContext.Categories.Add(item);
@@ -47,8 +49,9 @@ namespace HomeCFOContext.SeedData
             IList<Activity> mintActivity = new List<Activity>();
 
             var engine = new FileHelperEngine<Activity>();
+            var results = engine.ReadFile(pathtofile);
 
-            mintActivity = engine.ReadFile(pathtofile);
+            mintActivity = results.ToList<Activity>();
 
             foreach (Activity item in mintActivity)
                 mintContext.Activities.Add(item);

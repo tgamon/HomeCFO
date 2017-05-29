@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FileHelper\MintHelpers\ActivityHelper.cs" />
+    <Compile Include="FileHelper\MintHelpers\CategoryHelper.cs" />
+    <Compile Include="FileHelper\MintHelpers\GroupHelper.cs" />
     <Compile Include="Global\Account.cs" />
     <Compile Include="Global\Grouping.cs" />
     <Compile Include="Global\StatementClassification.cs" />
@@ -53,6 +56,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FileHelper\GlobalHelpers\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

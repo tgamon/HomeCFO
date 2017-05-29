@@ -8,11 +8,12 @@ using FileHelpers;
 namespace Model.Mint
 {
     [DelimitedRecord(",")]
+    [IgnoreFirst]
     public class Group
     {
         public int GroupId { get; set; }
         public string GroupName { get; set; }
 
-        public virtual ICollection<Category> Categories { get; set; }
+        //public virtual IList<Category> Categories { get; set; }
     }
 }

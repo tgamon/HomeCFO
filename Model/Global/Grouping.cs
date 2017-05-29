@@ -16,6 +16,6 @@ namespace Model.Global
 
         public int StatementClassificationId { get; set; }
         public virtual StatementClassification StatementClassification { get; set; }
-        public virtual List<Account> Accounts { get; set; }
+        public virtual IList<Account> Accounts { get; set; }
     }
 }
